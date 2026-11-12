@@ -1,8 +1,8 @@
 {
   "format": 1,
-  "serial": 1,
-  "issued": "2026-11-12T10:01:05.865Z",
-  "keyId": null,
+  "serial": 2,
+  "issued": "2026-11-12T18:34:37.357Z",
+  "keyId": "josh-2026-11",
   "plugins": {
     "shipping": {
       "id": "shipping",
