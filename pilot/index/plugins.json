@@ -1,9 +1,151 @@
 {
   "format": 1,
-  "serial": 2,
-  "issued": "2026-11-12T18:34:37.357Z",
+  "serial": 3,
+  "issued": "2026-11-12T23:33:07.117Z",
   "keyId": "josh-2026-11",
   "plugins": {
+    "chat": {
+      "id": "chat",
+      "name": "Chat",
+      "description": "A chat bubble that answers questions from your site's own content and passes visitors to you on WhatsApp, Messenger or Instagram.",
+      "version": "1.0.0",
+      "file": "chat-1.0.0.pgz",
+      "sha256": "e4318e3e2f788542807bbe748bc75728d49dff2122e9c712234e2bc27733a395",
+      "size": 64082,
+      "adminRange": ">=1.52.0 <2.0.0",
+      "api": 1,
+      "requires": [],
+      "enhances": [
+        "forms",
+        "conversions"
+      ],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
+    "cookie-consent": {
+      "id": "cookie-consent",
+      "name": "Cookie consent",
+      "description": "Asks visitors before analytics and ad cookies where the law requires it, and lets anyone opt out.",
+      "version": "1.0.0",
+      "file": "cookie-consent-1.0.0.pgz",
+      "sha256": "7b5d4a72e53dbeb2a15830b78c9530894c8eb95fadc003556150ef4aa2565bbf",
+      "size": 3298,
+      "adminRange": ">=1.52.0 <2.0.0",
+      "api": 1,
+      "requires": [],
+      "enhances": [],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
+    "imported-pages": {
+      "id": "imported-pages",
+      "name": "Imported pages",
+      "description": "Serve your site's own pages (HTML, styles, scripts and images) at the addresses they had, beside checkout and the admin.",
+      "version": "1.1.0",
+      "file": "imported-pages-1.1.0.pgz",
+      "sha256": "9c8d87df31fe821df69fefa9f0845d0f672e6fd7def5884c0034f5d7e280d855",
+      "size": 34929,
+      "adminRange": ">=1.52.0 <2.0.0",
+      "api": 1,
+      "requires": [],
+      "enhances": [
+        "store",
+        "cookie-consent",
+        "membership"
+      ],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
+    "membership": {
+      "id": "membership",
+      "name": "Membership",
+      "description": "Applications to join, the owner's approval, member log in and password reset, and the members' own page.",
+      "version": "1.1.0",
+      "file": "membership-1.1.0.pgz",
+      "sha256": "f86309c1b8b79f0ab450a0aa2afcccdb73dd9cad0b333924aa0a10f96c64f66c",
+      "size": 62968,
+      "adminRange": ">=1.52.0 <2.0.0",
+      "api": 1,
+      "requires": [],
+      "enhances": [
+        "forms",
+        "automations"
+      ],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
+    "newsletter": {
+      "id": "newsletter",
+      "name": "Newsletter",
+      "description": "Newsletter signups: the footer bar, the box at checkout, the subscribers list and sending signups to Substack, Loops or Resend.",
+      "version": "1.0.0",
+      "file": "newsletter-1.0.0.pgz",
+      "sha256": "516d4639c3b606bd2ea88c9d62a9c74ceef024de275ff5b2432be55698cca0c3",
+      "size": 8584,
+      "adminRange": ">=1.52.0 <2.0.0",
+      "api": 1,
+      "requires": [],
+      "enhances": [
+        "storefront",
+        "store",
+        "automations"
+      ],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
+    "paid-access": {
+      "id": "paid-access",
+      "name": "Paid access",
+      "description": "Sell time-limited access to a tool or page, with access codes, extensions and expiry.",
+      "version": "1.0.0",
+      "file": "paid-access-1.0.0.pgz",
+      "sha256": "68914046225b8480e7d6f363f3cf56882ef37a3cd11819ead3f525d3c3239c72",
+      "size": 16557,
+      "adminRange": ">=1.52.0 <2.0.0",
+      "api": 1,
+      "requires": [
+        "store"
+      ],
+      "enhances": [],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
+    "promo-codes": {
+      "id": "promo-codes",
+      "name": "Promo codes",
+      "description": "Discount codes, ?promo= links and the price adjustment at checkout.",
+      "version": "1.0.0",
+      "file": "promo-codes-1.0.0.pgz",
+      "sha256": "217c01bb9232ef30f48574601127b521a6ea62b099c511ab945160b0628be5be",
+      "size": 15141,
+      "adminRange": ">=1.52.0 <2.0.0",
+      "api": 1,
+      "requires": [
+        "store"
+      ],
+      "enhances": [],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
+    "reviews": {
+      "id": "reviews",
+      "name": "Reviews",
+      "description": "Reviews on products, testimonial requests after a purchase, and moderation.",
+      "version": "1.0.0",
+      "file": "reviews-1.0.0.pgz",
+      "sha256": "0f2f475f2b5d3f6468ac5ed74e5c019406203b39b348c31b2a3711066686f540",
+      "size": 16390,
+      "adminRange": ">=1.52.0 <2.0.0",
+      "api": 1,
+      "requires": [],
+      "enhances": [
+        "store",
+        "bookings",
+        "automations"
+      ],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
     "shipping": {
       "id": "shipping",
       "name": "Shipping & delivery",
