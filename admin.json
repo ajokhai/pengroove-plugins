@@ -1,21 +1,106 @@
 {
-  "latest": "1.51.0",
+  "latest": "1.52.0",
   "releases": [
+    {
+      "version": "1.52.0",
+      "date": "2026-11-12",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "Your site's pages and imported pages are listed together under Pages, not as separate menu links"
+        },
+        {
+          "kind": "new",
+          "text": "Updates shows your version, a Check for updates button, what's new and how to update"
+        },
+        {
+          "kind": "new",
+          "text": "The Plugins page has search, filters, pages and a details page for every plugin, with its version and what's new"
+        },
+        {
+          "kind": "new",
+          "text": "See plugins you don't have yet, and newer versions of the ones you do"
+        },
+        {
+          "kind": "new",
+          "text": "Bring in a template you bought or a site you built elsewhere, with step-by-step help"
+        },
+        {
+          "kind": "new",
+          "text": "Links to pages ending in .html work, add-to-cart buttons work without code, and plain HTML forms send their answers"
+        },
+        {
+          "kind": "new",
+          "text": "/cart opens checkout"
+        },
+        {
+          "kind": "fix",
+          "text": "Checkout only accepts whole-number quantities"
+        },
+        {
+          "kind": "fix",
+          "text": "Draft and archived products can't be bought"
+        },
+        {
+          "kind": "fix",
+          "text": "Saving the Home page in one tab no longer undoes changes made in another"
+        }
+      ],
+      "plugins": [
+        {
+          "name": "Blog",
+          "description": "Write posts and publish them on your site at /blog"
+        }
+      ]
+    },
     {
       "version": "1.51.0",
       "date": "2026-11-12",
       "notes": [
-        { "kind": "new", "text": "Shipping: charge for delivery and collect the buyer's address at checkout" },
-        { "kind": "new", "text": "Products in colours and sizes, with swatches and a photo for each option" },
-        { "kind": "new", "text": "Choose which page is your home page" },
-        { "kind": "new", "text": "The Plugins page shows each plugin as a card" },
-        { "kind": "new", "text": "Forms on your own pages send their answers to Form submissions" },
-        { "kind": "new", "text": "Import members from a spreadsheet" },
-        { "kind": "new", "text": "Updates: see when a newer version is out and what it brings" },
-        { "kind": "faster", "text": "Pages load faster and use less server time" },
-        { "kind": "faster", "text": "Images are converted once, not every time they're shown" },
-        { "kind": "fix", "text": "Imported pages are served from the fast cache again" },
-        { "kind": "fix", "text": "Pages can show images from Unsplash" }
+        {
+          "kind": "new",
+          "text": "Shipping: charge for delivery and collect the buyer's address at checkout"
+        },
+        {
+          "kind": "new",
+          "text": "Products in colours and sizes, with swatches and a photo for each option"
+        },
+        {
+          "kind": "new",
+          "text": "Choose which page is your home page"
+        },
+        {
+          "kind": "new",
+          "text": "The Plugins page shows each plugin as a card"
+        },
+        {
+          "kind": "new",
+          "text": "Forms on your own pages send their answers to Form submissions"
+        },
+        {
+          "kind": "new",
+          "text": "Import members from a spreadsheet"
+        },
+        {
+          "kind": "new",
+          "text": "Updates: see when a newer version is out and what it brings"
+        },
+        {
+          "kind": "faster",
+          "text": "Pages load faster and use less server time"
+        },
+        {
+          "kind": "faster",
+          "text": "Images are converted once, not every time they're shown"
+        },
+        {
+          "kind": "fix",
+          "text": "Imported pages are served from the fast cache again"
+        },
+        {
+          "kind": "fix",
+          "text": "Pages can show images from Unsplash"
+        }
       ]
     }
   ],
