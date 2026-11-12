@@ -1,6 +1,28 @@
 {
-  "latest": "1.53.0",
+  "latest": "1.54.0",
   "releases": [
+    {
+      "version": "1.54.0",
+      "date": "2026-11-12",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "Plugins can be added to your site from the Plugins page, so your admin only carries what you use"
+        },
+        {
+          "kind": "new",
+          "text": "Chat, Newsletter, Reviews, Promo codes, Membership, Paid access, Shipping, Cookie consent and Imported pages are now separate plugins"
+        },
+        {
+          "kind": "fix",
+          "text": "Switching a plugin off can no longer change another plugin’s settings"
+        },
+        {
+          "kind": "fix",
+          "text": "Checkout and newsletter automations wait until Automations is switched on"
+        }
+      ]
+    },
     {
       "version": "1.53.0",
       "date": "2026-11-12",
