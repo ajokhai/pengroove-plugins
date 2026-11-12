@@ -1,6 +1,32 @@
 {
-  "latest": "1.52.0",
+  "latest": "1.53.0",
   "releases": [
+    {
+      "version": "1.53.0",
+      "date": "2026-11-12",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "Connect your AI assistant (Claude, ChatGPT) to your admin out of the box, with a key you create"
+        },
+        {
+          "kind": "new",
+          "text": "Pages can be for signed-in members only"
+        },
+        {
+          "kind": "new",
+          "text": "Email keys now live in Settings → Email"
+        },
+        {
+          "kind": "fix",
+          "text": "Switched-off Conversions and Automations now send nothing at all"
+        },
+        {
+          "kind": "faster",
+          "text": "Missing files are answered from the fast cache instead of the server"
+        }
+      ]
+    },
     {
       "version": "1.52.0",
       "date": "2026-11-12",
