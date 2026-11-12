@@ -1,0 +1,487 @@
+{
+  "generatedFor": "1.52.0",
+  "plugins": [
+    {
+      "id": "automations",
+      "name": "Automations",
+      "summary": "Emails that send themselves after a sale, booking or signup",
+      "description": "Automatic emails, their editor, sends and analytics.",
+      "features": [
+        "Ready-made emails for left checkouts and asking for reviews",
+        "Start on a sale, booking, session, newsletter signup, refund or left checkout",
+        "Add waits, personal details and discount codes to each email",
+        "Send yourself a test before switching it on",
+        "See how many were opened and clicked, and the sales they led to"
+      ],
+      "group": "Marketing",
+      "icon": "bolt",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "bookings",
+      "name": "Bookings",
+      "summary": "Let customers book and pay for sessions at times you're free",
+      "description": "Bookable products, time slots, the calendar, Cal.com and calendar feeds.",
+      "features": [
+        "Sell sessions with your own plans, prices, weekly hours and days off",
+        "Move a session, cancel it with or without a refund, or resend its details",
+        "See every booking in Google, Apple or Outlook Calendar",
+        "Stop people booking times you're already busy",
+        "Give every booking its own call link with Cal.com"
+      ],
+      "group": "Sales",
+      "icon": "bookings",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "chat",
+      "name": "Chat",
+      "summary": "A chat bubble that answers questions and hands over to WhatsApp",
+      "description": "A chat bubble that answers questions from your site's own content and passes visitors to you on WhatsApp, Messenger or Instagram.",
+      "features": [
+        "Answers from your products, pages, policies and your own written answers",
+        "Not AI: it shows your own words, with no fees per message",
+        "Passes visitors to you on WhatsApp, Messenger or Instagram",
+        "Shows an away message outside your office hours",
+        "Try a question first to see the answer the bot would give"
+      ],
+      "group": "Customers",
+      "icon": "chat",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-08",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "cookie-consent",
+      "name": "Cookie consent",
+      "summary": "Ask visitors about cookies where the law requires it",
+      "description": "Asks visitors before analytics and ad cookies where the law requires it, and lets anyone opt out.",
+      "features": [
+        "A banner asks first in places such as the EU, UK, Nigeria and Brazil",
+        "Ad pixels and analytics wait until the visitor accepts",
+        "Everyone can opt out from Cookie settings at the bottom of every page",
+        "Cart, checkout and sign-in always work, whatever the visitor chooses",
+        "Choose which countries are asked first"
+      ],
+      "group": "Website",
+      "icon": "cookie",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-05",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "forms",
+      "name": "Forms",
+      "summary": "An inquiry form with your own questions and file uploads",
+      "description": "The inquiry form builder, file uploads and their submissions.",
+      "features": [
+        "Build your own questions, from short answers to checkboxes and phone numbers",
+        "Let visitors attach files, kept privately for you",
+        "Send people on to another page, such as your booking page, once they're done",
+        "Every answer is saved in Form submissions and emailed to you"
+      ],
+      "group": "Customers",
+      "icon": "form",
+      "version": "1.1.0",
+      "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-12",
+          "notes": "A form on any of your site's pages can send its answers to Form submissions."
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "imported-pages",
+      "name": "Imported pages",
+      "summary": "Keep your own site's pages, at the addresses they already had",
+      "description": "Serve your site's own pages (HTML, styles, scripts and images) at the addresses they had, beside checkout and the admin.",
+      "features": [
+        "Upload your site's folder of pages, styles, scripts and images",
+        "Each page keeps its old address, beside checkout and the admin",
+        "Check what a new upload changes, then publish it all at once",
+        "Imported pages use the same cart, cookie banner and ad tags as the rest of the site"
+      ],
+      "group": "Website",
+      "icon": "pages",
+      "version": "1.1.0",
+      "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-11",
+          "notes": "Pages kept with a site's own code go live on its first build."
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-11-10",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "local-currency",
+      "name": "Local currency",
+      "summary": "Show and charge prices in each visitor's own currency",
+      "description": "Shows prices in the visitor's own currency, with a preview bar for you.",
+      "features": [
+        "Buyers in Ghana, Kenya and nearby countries see and pay in their own money",
+        "Everyone else outside Nigeria sees US dollars",
+        "Prices are converted at the day's rate and rounded up",
+        "You're still paid in naira or dollars, and your reports stay in naira",
+        "Preview the shop as a visitor from another country"
+      ],
+      "group": "Sales",
+      "icon": "currency",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "markets",
+      "name": "Markets",
+      "summary": "Sell in other countries with their own prices and currency",
+      "description": "Sell to other countries: each market's currency, prices, headline and FAQs, and the country each visitor is in.",
+      "features": [
+        "Add a market for a country, a region such as the EU, or everyone else",
+        "Each product can have its own price, words and file in each market",
+        "Visitors see their own market and can switch with a picker in the header",
+        "Suggests fair prices for each market from your US dollar price",
+        "Charge a market in US dollars while buyers still see local prices"
+      ],
+      "group": "Sales",
+      "icon": "markets",
+      "version": "1.1.0",
+      "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-11",
+          "notes": "Charge a market in US dollars, with each market's price suggested from the USD price."
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-11-05",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "membership",
+      "name": "Membership",
+      "summary": "Let people apply to join, then log in to a members' page",
+      "description": "Applications to join, the owner's approval, member log in and password reset, and the members' own page.",
+      "features": [
+        "People apply on your site, and you approve or decline them",
+        "Approved members log in and can reset their own password",
+        "Add your own member fields, such as company or membership tier",
+        "Choose which fields members can see or change",
+        "Import and export your members as a spreadsheet"
+      ],
+      "group": "Customers",
+      "icon": "customers",
+      "version": "1.1.0",
+      "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-12",
+          "notes": "Import members from a spreadsheet, with a preview before anything is saved."
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "newsletter",
+      "name": "Newsletter",
+      "summary": "Collect newsletter signups and send them to your mailing list",
+      "description": "Newsletter signups: the footer bar, the box at checkout, the subscribers list and sending signups to Substack, Loops or Resend.",
+      "features": [
+        "A signup bar in the footer and a box to tick at checkout",
+        "Sends signups to Substack, Loops or Resend",
+        "See whether each signup reached your list, and retry the ones that failed",
+        "Download all your subscribers as a spreadsheet",
+        "A new signup can start a welcome email"
+      ],
+      "group": "Marketing",
+      "icon": "newsletter",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "paid-access",
+      "name": "Paid access",
+      "summary": "Sell time-limited access to a tool or page on your site",
+      "description": "Sell time-limited access to a tool or page, with access codes, extensions and expiry.",
+      "features": [
+        "Access lasts the number of days you set, or never ends",
+        "Buyers get a link in their receipt and thank-you page, with the date access ends",
+        "When access ends, buyers can buy again for a new period",
+        "A full refund ends access straight away",
+        "Stop new sales while current buyers keep their access"
+      ],
+      "group": "Sales",
+      "icon": "connection",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-10",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "payments",
+      "name": "Payments",
+      "summary": "Take payments through Bachs and see your money and payouts",
+      "description": "The Bachs connection and keys, transactions, payouts, fees and checkout problems.",
+      "features": [
+        "Connect Bachs and switch between test and live payments",
+        "See your balance and every payment, and refund one in full",
+        "Follow each payout to your bank account",
+        "Set Bachs's fee, and choose per product whether you or the buyer pays it",
+        "Download your payments as a spreadsheet"
+      ],
+      "group": "Payments",
+      "icon": "payments",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "promo-codes",
+      "name": "Promo codes",
+      "summary": "Discount codes and links that apply them for buyers",
+      "description": "Discount codes, ?promo= links and the price adjustment at checkout.",
+      "features": [
+        "Percentage or fixed amount off, on every product or only the ones you pick",
+        "Set start and end dates, a minimum order and a limit on uses",
+        "Allow one use per customer, checked against the email they pay with",
+        "Share a link that applies the code, remembered for 30 days",
+        "See how often each code was used and the sales it brought in"
+      ],
+      "group": "Sales",
+      "icon": "promos",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "reviews",
+      "name": "Reviews",
+      "summary": "Collect product reviews and approve them before they show",
+      "description": "Reviews on products, testimonial requests after a purchase, and moderation.",
+      "features": [
+        "Buyers leave reviews from a product page or a request email",
+        "Request emails go a day after a purchase or a booked session",
+        "Nothing shows on your site until you approve it",
+        "See whether a reviewer's email has bought from you",
+        "Show your favourite reviews on the home page"
+      ],
+      "group": "Marketing",
+      "icon": "testimonials",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "conversions",
+      "name": "Server-side conversions",
+      "summary": "Report sales to your ad accounts even when ad blockers hide them",
+      "description": "Sends purchases to Meta, TikTok and Google Analytics from the server.",
+      "features": [
+        "Sends sales to Meta, TikTok and Google Analytics from your site's server",
+        "Reports add to cart, checkout started, purchases and bookings",
+        "A sale seen by both the browser and the server is counted once",
+        "Email addresses and phone numbers are scrambled before they're sent",
+        "See every event and how many were sent in the last 30 days"
+      ],
+      "group": "Marketing",
+      "icon": "tracking",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "shipping",
+      "name": "Shipping & delivery",
+      "summary": "Ask for a delivery address when someone buys a physical product",
+      "description": "Asks for a delivery address at checkout when the cart holds a physical product, and keeps it on the order.",
+      "features": [
+        "Checkout asks for a street address, city, state and an optional note",
+        "Only carts with a physical product are asked; downloads and bookings aren't",
+        "An order for something physical can't go through without an address",
+        "The address shows on the order, in the order emails and in the export"
+      ],
+      "group": "Sales",
+      "icon": "truck",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-12",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "store",
+      "name": "Store",
+      "summary": "Your products, cart, checkout, orders and customers in one place",
+      "description": "Products, collections, cart, checkout, orders, refunds, customers and digital downloads.",
+      "features": [
+        "Sell downloads, with private files only paying buyers can open",
+        "See every order, refund a paid one or cancel an unpaid one",
+        "Sell products in colours and sizes, with swatches and photos for each",
+        "See everyone who's bought from you and how much they've spent",
+        "Export your orders as a spreadsheet for your accounts"
+      ],
+      "group": "Sales",
+      "icon": "orders",
+      "version": "1.1.0",
+      "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-12",
+          "notes": "Products in colours and sizes, with swatches and photos per option."
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "storefront",
+      "name": "Storefront",
+      "summary": "A ready-made public website for your shop",
+      "description": "The public website: your theme, home page, pages, policies, products and cart. Leave it off when your own website is connected through the API.",
+      "features": [
+        "Your home page, pages, policies, products and cart, shown to visitors",
+        "Edit the home page's big top section: its words, buttons, colours and figures",
+        "Shows the reviews you pick on your home page",
+        "Switch it off if you use your own website: checkout keeps working"
+      ],
+      "group": "Website",
+      "icon": "storefront",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    },
+    {
+      "id": "upsells-bundles",
+      "name": "Upsells & bundles",
+      "summary": "Bundles, add-on offers and upgrades in the cart and at checkout",
+      "description": "Bundle products and the offers shown after something is added to the cart.",
+      "features": [
+        "Sell several downloads together as a bundle, for less",
+        "Offer something to add in the cart and at checkout, chosen by you or automatically",
+        "Give up to 90% off an add-on when it's bought together",
+        "Offer an upgrade in place of a product, on its page, in the cart and at checkout",
+        "Upgrades swap with one tap and keep the quantity"
+      ],
+      "group": "Sales",
+      "icon": "gift",
+      "version": "1.1.0",
+      "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-11",
+          "notes": "Offer an upgrade in place of a product, on its page, in the cart and at checkout."
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-11-04",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.51.0"
+    }
+  ]
+}
