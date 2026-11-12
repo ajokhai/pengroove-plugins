@@ -26,6 +26,30 @@
       "since": "1.51.0"
     },
     {
+      "id": "blog",
+      "name": "Blog",
+      "summary": "Write posts and publish them on your site at /blog",
+      "description": "Write posts and publish them on your site at /blog, with drafts, scheduled dates, tags, an RSS feed and search-friendly pages.",
+      "features": [
+        "Write posts with headings, links and images, and preview them before they go live",
+        "Keep drafts private, or pick a date and a post goes live by itself",
+        "Tag posts, and readers see related posts under each one",
+        "Readers can follow your RSS feed, and search engines find every post",
+        "Bring your old blog's posts across as they were, addresses and all"
+      ],
+      "group": "Website",
+      "icon": "blog",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-12",
+          "notes": "First release as a plugin."
+        }
+      ],
+      "since": "1.52.0"
+    },
+    {
       "id": "bookings",
       "name": "Bookings",
       "summary": "Let customers book and pay for sessions at times you're free",
