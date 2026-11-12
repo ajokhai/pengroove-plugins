@@ -1,0 +1,26 @@
+{
+  "latest": "1.51.0",
+  "releases": [
+    {
+      "version": "1.51.0",
+      "date": "2026-11-12",
+      "notes": [
+        { "kind": "new", "text": "Shipping: charge for delivery and collect the buyer's address at checkout" },
+        { "kind": "new", "text": "Products in colours and sizes, with swatches and a photo for each option" },
+        { "kind": "new", "text": "Choose which page is your home page" },
+        { "kind": "new", "text": "The Plugins page shows each plugin as a card" },
+        { "kind": "new", "text": "Forms on your own pages send their answers to Form submissions" },
+        { "kind": "new", "text": "Import members from a spreadsheet" },
+        { "kind": "new", "text": "Updates: see when a newer version is out and what it brings" },
+        { "kind": "faster", "text": "Pages load faster and use less server time" },
+        { "kind": "faster", "text": "Images are converted once, not every time they're shown" },
+        { "kind": "fix", "text": "Imported pages are served from the fast cache again" },
+        { "kind": "fix", "text": "Pages can show images from Unsplash" }
+      ]
+    }
+  ],
+  "update": {
+    "message": "To update, open your site's repository on GitHub and press Sync fork, or contact us and we'll update it for you.",
+    "syncFork": true
+  }
+}
