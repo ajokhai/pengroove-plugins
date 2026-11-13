@@ -1,6 +1,28 @@
 {
-  "latest": "1.56.0",
+  "latest": "1.56.1",
   "releases": [
+    {
+      "version": "1.56.1",
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "Every order has its own page: items, payment, customer, shipping address, where they came from, staff notes and a timeline"
+        },
+        {
+          "kind": "new",
+          "text": "Test orders are clearly marked, so you can tell them from real sales"
+        },
+        {
+          "kind": "fix",
+          "text": "Your site’s settings are always used on its pages, even ones made while it was building"
+        },
+        {
+          "kind": "faster",
+          "text": "A plugin that fails to start is retried once a minute instead of on every visit"
+        }
+      ]
+    },
     {
       "version": "1.56.0",
       "date": "2026-11-13",
