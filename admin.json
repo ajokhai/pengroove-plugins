@@ -1,6 +1,24 @@
 {
-  "latest": "1.56.1",
+  "latest": "1.56.2",
   "releases": [
+    {
+      "version": "1.56.2",
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "An order’s timeline shows its receipt and the shop’s order notice"
+        },
+        {
+          "kind": "fix",
+          "text": "A site without Conversions no longer sends purchases to ad platforms"
+        },
+        {
+          "kind": "fix",
+          "text": "Plugins page: the page numbers no longer touch Get more plugins"
+        }
+      ]
+    },
     {
       "version": "1.56.1",
       "date": "2026-11-13",
