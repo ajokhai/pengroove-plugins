@@ -1,5 +1,5 @@
 {
-  "generatedFor": "1.52.0",
+  "generatedFor": "1.56.0",
   "plugins": [
     {
       "id": "automations",
@@ -87,8 +87,13 @@
       ],
       "group": "Customers",
       "icon": "chat",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "changes": [
+        {
+          "version": "1.0.1",
+          "date": "2026-11-13",
+          "notes": "Needs admin 1.56.0 or later; nothing else changes."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-08",
@@ -111,8 +116,13 @@
       ],
       "group": "Website",
       "icon": "cookie",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "changes": [
+        {
+          "version": "1.0.1",
+          "date": "2026-11-13",
+          "notes": "Needs admin 1.56.0 or later; nothing else changes."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-05",
@@ -162,8 +172,13 @@
       ],
       "group": "Website",
       "icon": "pages",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "changes": [
+        {
+          "version": "1.1.1",
+          "date": "2026-11-13",
+          "notes": "Needs admin 1.56.0 or later; nothing else changes."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-11",
@@ -178,45 +193,26 @@
       "since": "1.51.0"
     },
     {
-      "id": "local-currency",
-      "name": "Local currency",
-      "summary": "Show and charge prices in each visitor's own currency",
-      "description": "Shows prices in the visitor's own currency, with a preview bar for you.",
-      "features": [
-        "Buyers in Ghana, Kenya and nearby countries see and pay in their own money",
-        "Everyone else outside Nigeria sees US dollars",
-        "Prices are converted at the day's rate and rounded up",
-        "You're still paid in naira or dollars, and your reports stay in naira",
-        "Preview the shop as a visitor from another country"
-      ],
-      "group": "Sales",
-      "icon": "currency",
-      "version": "1.0.0",
-      "changes": [
-        {
-          "version": "1.0.0",
-          "date": "2026-11-04",
-          "notes": "First release as a plugin."
-        }
-      ],
-      "since": "1.51.0"
-    },
-    {
       "id": "markets",
       "name": "Markets",
-      "summary": "Sell in other countries with their own prices and currency",
-      "description": "Sell to other countries: each market's currency, prices, headline and FAQs, and the country each visitor is in.",
+      "summary": "Sell abroad in buyers' own currency: converted, or your own prices",
+      "description": "Sell to other countries: each market's currency, whether its prices are converted at the day's rate or set by you, its headline and FAQs, and the country each visitor is in. Includes what Local currency used to do.",
       "features": [
-        "Add a market for a country, a region such as the EU, or everyone else",
-        "Each product can have its own price, words and file in each market",
-        "Visitors see their own market and can switch with a picker in the header",
-        "Suggests fair prices for each market from your US dollar price",
-        "Charge a market in US dollars while buyers still see local prices"
+        "Buyers abroad see and pay in their own currency, converted at the day's rate and rounded up",
+        "Works from the start: new stores begin with an Everyone else market",
+        "Or give a market its own prices, and each product its own name, words and file there",
+        "Add a market for a country or a region such as the EU; visitors can switch in the header",
+        "Charge a market in US dollars if you like; you're still paid in naira or dollars"
       ],
       "group": "Sales",
       "icon": "markets",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-12",
+          "notes": "Local currency is part of Markets: each market converts your prices at the day's rate, or has its own. New stores start with an Everyone else market."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-11",
@@ -244,8 +240,13 @@
       ],
       "group": "Customers",
       "icon": "customers",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "changes": [
+        {
+          "version": "1.1.1",
+          "date": "2026-11-13",
+          "notes": "Needs admin 1.56.0 or later; nothing else changes."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-12",
@@ -273,8 +274,13 @@
       ],
       "group": "Marketing",
       "icon": "newsletter",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "changes": [
+        {
+          "version": "1.0.1",
+          "date": "2026-11-13",
+          "notes": "Needs admin 1.56.0 or later; nothing else changes."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-04",
@@ -297,8 +303,13 @@
       ],
       "group": "Sales",
       "icon": "connection",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "changes": [
+        {
+          "version": "1.0.1",
+          "date": "2026-11-13",
+          "notes": "Needs admin 1.56.0 or later; nothing else changes."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-10",
@@ -345,8 +356,13 @@
       ],
       "group": "Sales",
       "icon": "promos",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "changes": [
+        {
+          "version": "1.0.1",
+          "date": "2026-11-13",
+          "notes": "Needs admin 1.56.0 or later; nothing else changes."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-04",
@@ -369,8 +385,13 @@
       ],
       "group": "Marketing",
       "icon": "testimonials",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "changes": [
+        {
+          "version": "1.0.1",
+          "date": "2026-11-13",
+          "notes": "Needs admin 1.56.0 or later; nothing else changes."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-04",
@@ -416,8 +437,13 @@
       ],
       "group": "Sales",
       "icon": "truck",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "changes": [
+        {
+          "version": "1.0.1",
+          "date": "2026-11-13",
+          "notes": "Shipping sets up the delivery address on orders itself, so it can be added to a site as its own download."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-12",
