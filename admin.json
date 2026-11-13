@@ -1,6 +1,24 @@
 {
-  "latest": "1.55.0",
+  "latest": "1.56.0",
   "releases": [
+    {
+      "version": "1.56.0",
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "Local currency is now part of Markets: each market either shows local prices automatically or uses prices you set for that country"
+        },
+        {
+          "kind": "new",
+          "text": "Everyone else is a market too, for visitors from countries you haven’t set up"
+        },
+        {
+          "kind": "fix",
+          "text": "Settings saved while the site is building now always reach your database"
+        }
+      ]
+    },
     {
       "version": "1.55.0",
       "date": "2026-11-13",
