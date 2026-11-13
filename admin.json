@@ -1,6 +1,24 @@
 {
-  "latest": "1.56.3",
+  "latest": "1.57.0",
   "releases": [
+    {
+      "version": "1.57.0",
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "The Store, Payments and the Storefront are plugins you can get from Plugins, like the others"
+        },
+        {
+          "kind": "new",
+          "text": "Sales reports, Home’s sales figures and the shop’s policy texts come from the Store plugin"
+        },
+        {
+          "kind": "fix",
+          "text": "Older Conversions, Bookings and Forms plugins keep their webhook events, secrets and purchase reports"
+        }
+      ]
+    },
     {
       "version": "1.56.3",
       "date": "2026-11-13",

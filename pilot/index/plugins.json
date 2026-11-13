@@ -1,18 +1,18 @@
 {
   "format": 1,
-  "serial": 4,
-  "issued": "2026-11-13T00:44:45.420Z",
+  "serial": 5,
+  "issued": "2026-11-13T11:02:08.285Z",
   "keyId": "josh-2026-11",
   "plugins": {
     "automations": {
       "id": "automations",
       "name": "Automations",
       "description": "Automatic emails, their editor, sends and analytics.",
-      "version": "1.0.0",
-      "file": "automations-1.0.0.pgz",
-      "sha256": "444a3a87d28658bd6bd25c508fb53cda94f1501c4d193b7a2b264448af959fa0",
-      "size": 7452,
-      "adminRange": ">=1.56.0 <2.0.0",
+      "version": "1.1.0",
+      "file": "automations-1.1.0.pgz",
+      "sha256": "8b8a4f4b583d48e02fb91bb5ee6f42284fcb077c9f633474bf61902fe2fd3c03",
+      "size": 8114,
+      "adminRange": ">=1.56.1 <2.0.0",
       "api": 1,
       "requires": [],
       "enhances": [],
@@ -75,11 +75,11 @@
       "id": "conversions",
       "name": "Server-side conversions",
       "description": "Sends purchases to Meta, TikTok and Google Analytics from the server.",
-      "version": "1.0.0",
-      "file": "conversions-1.0.0.pgz",
-      "sha256": "e60fc1378c3db25353e2575ad86d3b55487ffeb5f73e3132fe9ae42ca6c0972c",
-      "size": 4468,
-      "adminRange": ">=1.56.0 <2.0.0",
+      "version": "1.0.1",
+      "file": "conversions-1.0.1.pgz",
+      "sha256": "817ac98b0fa54fa6da7a4c35ce2740e3f680c8c5a144329ce2cf8a38f2b1eabd",
+      "size": 4561,
+      "adminRange": ">=1.56.2 <2.0.0",
       "api": 1,
       "requires": [
         "store"
@@ -208,6 +208,21 @@
       "minimum": "0.0.0",
       "yanked": false
     },
+    "payments": {
+      "id": "payments",
+      "name": "Payments",
+      "description": "The Bachs connection and keys, transactions, payouts, fees and checkout problems.",
+      "version": "1.0.0",
+      "file": "payments-1.0.0.pgz",
+      "sha256": "04f796e49f776a38ddcb722bc73e7f0079afff6eebaf6f977f6874b5a5ac4cff",
+      "size": 31551,
+      "adminRange": ">=1.57.0 <2.0.0",
+      "api": 1,
+      "requires": [],
+      "enhances": [],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
     "promo-codes": {
       "id": "promo-codes",
       "name": "Promo codes",
@@ -248,16 +263,50 @@
       "id": "shipping",
       "name": "Shipping & delivery",
       "description": "Asks for a delivery address at checkout when the cart holds a physical product, and keeps it on the order.",
-      "version": "1.0.1",
-      "file": "shipping-1.0.1.pgz",
-      "sha256": "1ae5dca85d20c7b62339f6b3b61914011d80e061e83eea07adad5f86ec838b44",
-      "size": 6778,
-      "adminRange": ">=1.56.0 <2.0.0",
+      "version": "1.1.0",
+      "file": "shipping-1.1.0.pgz",
+      "sha256": "a5b70b85b1f52d422c78d6e9c461f5468623524711abfae04a33d94be52ae922",
+      "size": 7077,
+      "adminRange": ">=1.56.1 <2.0.0",
       "api": 1,
       "requires": [
         "store"
       ],
       "enhances": [],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
+    "store": {
+      "id": "store",
+      "name": "Store",
+      "description": "Products, collections, cart, checkout, orders, refunds, customers and digital downloads.",
+      "version": "1.2.0",
+      "file": "store-1.2.0.pgz",
+      "sha256": "ac65f70d6f98bf0e2ce1a723e5063938732ebd86648a2a4119c2383b958b53f3",
+      "size": 113840,
+      "adminRange": ">=1.57.0 <2.0.0",
+      "api": 1,
+      "requires": [
+        "payments"
+      ],
+      "enhances": [],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
+    "storefront": {
+      "id": "storefront",
+      "name": "Storefront",
+      "description": "The public website: your theme, home page, pages, policies, products and cart. Leave it off when your own website is connected through the API.",
+      "version": "1.0.0",
+      "file": "storefront-1.0.0.pgz",
+      "sha256": "e38995332f2971130e7951362cb6fc5604685597353aecaddcd54df8ed4aac2d",
+      "size": 13462,
+      "adminRange": ">=1.57.0 <2.0.0",
+      "api": 1,
+      "requires": [],
+      "enhances": [
+        "store"
+      ],
       "minimum": "0.0.0",
       "yanked": false
     },

@@ -1,5 +1,5 @@
 {
-  "generatedFor": "1.56.0",
+  "generatedFor": "1.57.0",
   "plugins": [
     {
       "id": "automations",
@@ -15,8 +15,13 @@
       ],
       "group": "Marketing",
       "icon": "bolt",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "Emails an automation sent about an order show in that order's timeline."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-04",
@@ -414,8 +419,13 @@
       ],
       "group": "Marketing",
       "icon": "tracking",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "changes": [
+        {
+          "version": "1.0.1",
+          "date": "2026-11-13",
+          "notes": "Reporting a paid order comes with the plugin, so a site without it reports nothing."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-04",
@@ -437,8 +447,13 @@
       ],
       "group": "Sales",
       "icon": "truck",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "The delivery address and a map link on each order's own page, which shows Unfulfilled until it's marked fulfilled."
+        },
         {
           "version": "1.0.1",
           "date": "2026-11-13",
@@ -459,15 +474,20 @@
       "description": "Products, collections, cart, checkout, orders, refunds, customers and digital downloads.",
       "features": [
         "Sell downloads, with private files only paying buyers can open",
-        "See every order, refund a paid one or cancel an unpaid one",
+        "See every order on its own page, refund a paid one or cancel an unpaid one",
         "Sell products in colours and sizes, with swatches and photos for each",
         "See everyone who's bought from you and how much they've spent",
         "Export your orders as a spreadsheet for your accounts"
       ],
       "group": "Sales",
       "icon": "orders",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-13",
+          "notes": "Each order has its own page: items, payment, customer, timeline, staff comments and notes, and marking it fulfilled."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-12",
