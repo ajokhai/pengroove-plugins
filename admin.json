@@ -1,6 +1,20 @@
 {
-  "latest": "1.56.2",
+  "latest": "1.56.3",
   "releases": [
+    {
+      "version": "1.56.3",
+      "date": "2026-11-13",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "Settings has one link for Updates & developers and one for Brand & marketing; their screens are tabs"
+        },
+        {
+          "kind": "new",
+          "text": "Abandoned checkouts is a tab of Orders"
+        }
+      ]
+    },
     {
       "version": "1.56.2",
       "date": "2026-11-13",
