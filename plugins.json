@@ -1,5 +1,5 @@
 {
-  "generatedFor": "1.57.0",
+  "generatedFor": "1.58.0",
   "plugins": [
     {
       "id": "automations",
@@ -15,8 +15,13 @@
       ],
       "group": "Marketing",
       "icon": "bolt",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-13",
+          "notes": "Automations read an order's details from the store in admin 1.57.0, so it needs admin 1.57.0 or later; nothing else changes."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -68,8 +73,13 @@
       ],
       "group": "Sales",
       "icon": "bookings",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "Bookings brings its own export, booking.confirmed webhook, secrets, privacy policy line and booking-slots API, and a plan's payment ids follow the payment provider you use, so it works as a download on admin 1.58.0 or later."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-04",
@@ -121,8 +131,13 @@
       ],
       "group": "Website",
       "icon": "cookie",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "Cookie consent adds its own line to your privacy policy, so it works as a download on admin 1.57.0 or later."
+        },
         {
           "version": "1.0.1",
           "date": "2026-11-13",
@@ -149,8 +164,13 @@
       ],
       "group": "Customers",
       "icon": "form",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-13",
+          "notes": "Forms brings its own inquiries export, inquiry.submitted webhook, privacy policy line and sitemap entry for the inquiry form, so it works as a download on admin 1.57.0 or later."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-12",
@@ -177,8 +197,13 @@
       ],
       "group": "Website",
       "icon": "pages",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-13",
+          "notes": "Imported pages read your cookie consent settings from where admin 1.57.0 keeps them, so it needs admin 1.57.0 or later; nothing else changes."
+        },
         {
           "version": "1.1.1",
           "date": "2026-11-13",
@@ -211,8 +236,13 @@
       ],
       "group": "Sales",
       "icon": "markets",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-13",
+          "notes": "Markets adds its own line to your privacy policy, uses the checkout in admin 1.57.0 and keeps its settings through a reset in admin 1.58.0, so it needs admin 1.58.0 or later."
+        },
         {
           "version": "1.2.0",
           "date": "2026-11-12",
@@ -245,8 +275,13 @@
       ],
       "group": "Customers",
       "icon": "customers",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-13",
+          "notes": "Membership adds its own line to your privacy policy, and its help points to Settings → Updates & developers, so it needs admin 1.57.0 or later."
+        },
         {
           "version": "1.1.1",
           "date": "2026-11-13",
@@ -279,8 +314,13 @@
       ],
       "group": "Marketing",
       "icon": "newsletter",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "Newsletter brings its own subscribers export and privacy policy line, so it works as a download on admin 1.57.0 or later."
+        },
         {
           "version": "1.0.1",
           "date": "2026-11-13",
@@ -308,8 +348,13 @@
       ],
       "group": "Sales",
       "icon": "connection",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "Paid access adds its own line to your privacy policy and uses the checkout in admin 1.57.0, so it needs admin 1.57.0 or later."
+        },
         {
           "version": "1.0.1",
           "date": "2026-11-13",
@@ -337,8 +382,13 @@
       ],
       "group": "Payments",
       "icon": "payments",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "Payments keeps its own settings and its checkout problems page, so it works as a download on admin 1.58.0 or later."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-04",
@@ -361,8 +411,13 @@
       ],
       "group": "Sales",
       "icon": "promos",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "Promo codes use the checkout in admin 1.57.0, so it needs admin 1.57.0 or later; nothing else changes."
+        },
         {
           "version": "1.0.1",
           "date": "2026-11-13",
@@ -390,8 +445,13 @@
       ],
       "group": "Marketing",
       "icon": "testimonials",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "A product's reviews over the API come from the catalogue in admin 1.57.0, and its settings are kept through a reset in admin 1.58.0, so it needs admin 1.58.0 or later."
+        },
         {
           "version": "1.0.1",
           "date": "2026-11-13",
@@ -419,8 +479,13 @@
       ],
       "group": "Marketing",
       "icon": "tracking",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "Conversions brings its own ad platform tokens to Tracking, so it works as a download on admin 1.57.0 or later."
+        },
         {
           "version": "1.0.1",
           "date": "2026-11-13",
@@ -447,8 +512,13 @@
       ],
       "group": "Sales",
       "icon": "truck",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-13",
+          "notes": "Shipping uses the checkout and order details in admin 1.57.0, so it needs admin 1.57.0 or later; nothing else changes."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -481,8 +551,13 @@
       ],
       "group": "Sales",
       "icon": "orders",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-13",
+          "notes": "The Store serves its own order page, checkout cancel page, checkout page editor, download links, share images and checkout problem reports, so it works as a download on admin 1.58.0 or later."
+        },
         {
           "version": "1.2.0",
           "date": "2026-11-13",
@@ -538,8 +613,13 @@
       ],
       "group": "Sales",
       "icon": "gift",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-13",
+          "notes": "Upsells and bundles use the checkout in admin 1.57.0, so it needs admin 1.57.0 or later; nothing else changes."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-11",
