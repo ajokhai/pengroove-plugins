@@ -1,7 +1,7 @@
 {
   "format": 1,
-  "serial": 7,
-  "issued": "2026-11-13T23:08:19.536Z",
+  "serial": 8,
+  "issued": "2026-11-14T17:15:00.672Z",
   "keyId": "josh-2026-11",
   "plugins": {
     "automations": {
@@ -420,6 +420,18 @@
       "yanked": false,
       "versions": [
         {
+          "version": "1.1.1",
+          "file": "payments-1.1.1.pgz",
+          "sha256": "35677a90abf232c7526df86e665b7f28c270af27f0e2701d20ac9c1dde31a54a",
+          "size": 32115,
+          "adminRange": ">=1.58.0 <2.0.0",
+          "api": 1,
+          "requires": [],
+          "enhances": [],
+          "minimum": "0.0.0",
+          "yanked": false
+        },
+        {
           "version": "1.1.0",
           "file": "payments-1.1.0.pgz",
           "sha256": "600a301227f5d905056212801ff70b99d8bfdf116b55b049f43b5d95a56355e4",
@@ -553,6 +565,20 @@
       "minimum": "0.0.0",
       "yanked": false,
       "versions": [
+        {
+          "version": "1.4.1",
+          "file": "store-1.4.1.pgz",
+          "sha256": "dd9b1e6f7b3b30fbe98d436b127079b71682efca5058ed21a0c3e4e5910bf915",
+          "size": 117826,
+          "adminRange": ">=1.58.0 <2.0.0",
+          "api": 1,
+          "requires": [
+            "payments"
+          ],
+          "enhances": [],
+          "minimum": "0.0.0",
+          "yanked": false
+        },
         {
           "version": "1.4.0",
           "file": "store-1.4.0.pgz",

@@ -1,5 +1,5 @@
 {
-  "generatedFor": "1.59.0",
+  "generatedFor": "1.59.1",
   "plugins": [
     {
       "id": "automations",
@@ -411,8 +411,13 @@
       ],
       "group": "Payments",
       "icon": "payments",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "changes": [
+        {
+          "version": "1.1.1",
+          "date": "2026-11-14",
+          "notes": "The keys page is called Connected services, and points to Developers → API keys for the keys you give your own website, apps and AI agents."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -580,8 +585,13 @@
       ],
       "group": "Sales",
       "icon": "orders",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "changes": [
+        {
+          "version": "1.4.1",
+          "date": "2026-11-14",
+          "notes": "Help points to Payments → Connected services, the new name of the payment keys page."
+        },
         {
           "version": "1.4.0",
           "date": "2026-11-13",

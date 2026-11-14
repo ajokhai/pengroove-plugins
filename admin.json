@@ -1,6 +1,32 @@
 {
-  "latest": "1.59.0",
+  "latest": "1.59.1",
   "releases": [
+    {
+      "version": "1.59.1",
+      "date": "2026-11-14",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "AI agents: name an agent, add it, and give any AI assistant or MCP client its key, address, header and config; revoke or delete it from the same page"
+        },
+        {
+          "kind": "new",
+          "text": "Every change an AI agent makes is a dry run first, and agent requests are rate-limited per key"
+        },
+        {
+          "kind": "fix",
+          "text": "A new API key starts on Secret, the kind a server or an AI agent needs"
+        },
+        {
+          "kind": "fix",
+          "text": "The payment keys page is now Connected services, and it and API keys point to each other"
+        },
+        {
+          "kind": "fix",
+          "text": "Payments 1.1.1 and Store 1.4.1 carry the new page name in their help"
+        }
+      ]
+    },
     {
       "version": "1.59.0",
       "date": "2026-11-14",
