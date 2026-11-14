@@ -1,6 +1,24 @@
 {
-  "latest": "1.58.0",
+  "latest": "1.59.0",
   "releases": [
+    {
+      "version": "1.59.0",
+      "date": "2026-11-14",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "Meta catalog feed: a product feed for WhatsApp, Facebook and Instagram shops, as a plugin"
+        },
+        {
+          "kind": "new",
+          "text": "A site can add its own admin link to a page of its own, such as a CRM"
+        },
+        {
+          "kind": "new",
+          "text": "Store 1.4.0 and Chat 1.1.0 share what a site’s own code needs from them"
+        }
+      ]
+    },
     {
       "version": "1.58.0",
       "date": "2026-11-13",

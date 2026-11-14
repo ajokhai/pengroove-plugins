@@ -1,5 +1,5 @@
 {
-  "generatedFor": "1.58.0",
+  "generatedFor": "1.59.0",
   "plugins": [
     {
       "id": "automations",
@@ -102,8 +102,13 @@
       ],
       "group": "Customers",
       "icon": "chat",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-13",
+          "notes": "A site's own code can import the ChatSettings and ChatKnowledgeEntry types from Chat (@/plugins/chat). Needs admin 1.58.0 or later."
+        },
         {
           "version": "1.0.1",
           "date": "2026-11-13",
@@ -299,6 +304,30 @@
         }
       ],
       "since": "1.51.0"
+    },
+    {
+      "id": "meta-catalog",
+      "name": "Meta catalog feed",
+      "summary": "Keep your WhatsApp, Facebook and Instagram catalog up to date",
+      "description": "A product feed for your Meta catalog, so WhatsApp Business, Facebook and Instagram always show what's on your site, and an AI brief to give Meta Business AI or any AI assistant.",
+      "features": [
+        "A product feed Meta fetches by itself, so prices you change here reach your catalog",
+        "List every product, or only the collections you choose, and leave any product out",
+        "A preview of the feed, with warnings for anything Meta may reject",
+        "Step-by-step help to connect the feed to Commerce Manager and WhatsApp Business",
+        "An AI brief of your business, products and prices for Meta Business AI or any AI assistant"
+      ],
+      "group": "Marketing",
+      "icon": "products",
+      "version": "1.0.0",
+      "changes": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-13",
+          "notes": "First release as a plugin, for admin 1.58.0 or later. Known limits: the AI brief repeats Chat's quick replies and knowledge while the Chat plugin is on, even with the chat bubble hidden; a new product whose handle equals a booking plan's id gives that plan a new item id, which Meta reads as one item removed and one added."
+        }
+      ],
+      "since": "1.59.0"
     },
     {
       "id": "newsletter",
@@ -551,8 +580,13 @@
       ],
       "group": "Sales",
       "icon": "orders",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "changes": [
+        {
+          "version": "1.4.0",
+          "date": "2026-11-13",
+          "notes": "A site's own code can import BLANK_PRODUCT and listOrders from the Store (@/plugins/store)."
+        },
         {
           "version": "1.3.0",
           "date": "2026-11-13",
