@@ -1,6 +1,20 @@
 {
-  "latest": "1.60.0",
+  "latest": "1.60.1",
   "releases": [
+    {
+      "version": "1.60.1",
+      "date": "2026-11-15",
+      "notes": [
+        {
+          "kind": "fix",
+          "text": "A MongoDB site whose database user has rights to some collections only (as on Atlas) builds and starts: collections are looked up one name at a time"
+        },
+        {
+          "kind": "fix",
+          "text": "A database that refuses one index change no longer stops the others; the error is logged"
+        }
+      ]
+    },
     {
       "version": "1.60.0",
       "date": "2026-11-15",
