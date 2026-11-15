@@ -1,6 +1,412 @@
 {
-  "latest": "1.59.1",
+  "latest": "1.60.0",
   "releases": [
+    {
+      "version": "1.60.0",
+      "date": "2026-11-15",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "An image's credit is kept with it, and the same image sent twice is kept once (mmp 1.72.11)"
+        },
+        {
+          "kind": "new",
+          "text": "Admin_login_link: an agent's key makes a one-time sign-in link, read-only keys open a view-only session"
+        },
+        {
+          "kind": "new",
+          "text": "Update_product also sets position, badges, related products and a bundle's contents"
+        },
+        {
+          "kind": "new",
+          "text": "Agents can read and change a session's booking rules: get_booking_config and update_booking_config"
+        },
+        {
+          "kind": "new",
+          "text": "Agents can list collections and put products in one or take them out"
+        },
+        {
+          "kind": "new",
+          "text": "Agents can note an order, mark it fulfilled and record an offline payment"
+        },
+        {
+          "kind": "new",
+          "text": "A submission's status: update_submission marks it new, read or done, and list_submissions filters by it"
+        },
+        {
+          "kind": "new",
+          "text": "Agents can change the store's name, contact details, menus and SEO: update_settings_slice"
+        },
+        {
+          "kind": "fix",
+          "text": "A failed settings read answers \"try again\", not the switch's guess"
+        },
+        {
+          "kind": "fix",
+          "text": "A tool refuses an argument it doesn't declare, and initialize says which build it is"
+        },
+        {
+          "kind": "new",
+          "text": "Create_market and update_market dry runs show the market as it would be saved, as on mmp 1.72.2"
+        },
+        {
+          "kind": "new",
+          "text": "Photos and contact buttons per market, and images are always the site's own (mmp 1.72.10)"
+        },
+        {
+          "kind": "new",
+          "text": "A market can have its own product picture and gallery, and update_product copies an image from a link"
+        },
+        {
+          "kind": "new",
+          "text": "A market's own product words show on its pages: name, description, search result and button"
+        },
+        {
+          "kind": "fix",
+          "text": "One small MongoDB pool per instance, which a site's own code shares (mmp 1.72.9)"
+        },
+        {
+          "kind": "new",
+          "text": "A product's words per market: update_product and get_product take market"
+        },
+        {
+          "kind": "fix",
+          "text": "A product with no price in a market is shown and sold there in naira, not refused"
+        },
+        {
+          "kind": "new",
+          "text": "The header's market picker offers Nigeria (your own prices), and a Nigerian visitor sees it picked"
+        },
+        {
+          "kind": "new",
+          "text": "A site can serve its own home page at /, with SITE_HOME_PATH"
+        },
+        {
+          "kind": "new",
+          "text": "A site's own pages keep their words per market, editable in Content → Pages and the pages API"
+        },
+        {
+          "kind": "fix",
+          "text": "A MongoDB site's build loads the database code by its file path, so tsx running prepare.mts resolves it"
+        },
+        {
+          "kind": "fix",
+          "text": "The Preview as hint reads as a sentence, and the markets smoke tests find the editions' tabs"
+        },
+        {
+          "kind": "fix",
+          "text": "1.1.1, its first-state check on Where, for admin 1.60.0"
+        },
+        {
+          "kind": "fix",
+          "text": "Only a market's converted product price rounds up to the next 10; Everyone else keeps its rounding"
+        },
+        {
+          "kind": "fix",
+          "text": "Products has one \"Preview as\" menu, and the preview bar has a market picker and Exit preview"
+        },
+        {
+          "kind": "fix",
+          "text": "A converted price rounds up to the next 10, shown and charged alike"
+        },
+        {
+          "kind": "new",
+          "text": "A product can be hidden where your own prices apply (Nigeria)"
+        },
+        {
+          "kind": "fix",
+          "text": "Page dry runs show the page before and after, and the contract test has a page and a market to read"
+        },
+        {
+          "kind": "fix",
+          "text": "The Markets editor saves again with Everyone else in the list"
+        },
+        {
+          "kind": "new",
+          "text": "Preview a market (drafts too) from Markets and Products, and the Markets page and editions read like mmp 1.71.4"
+        },
+        {
+          "kind": "fix",
+          "text": "The build's plugin step opens the database the app opens, mmp_admin on a switched mmp site and never its CRM"
+        },
+        {
+          "kind": "fix",
+          "text": "With no admin database named, a switched mmp site opens mmp_admin, not an empty one"
+        },
+        {
+          "kind": "fix",
+          "text": "A bookable session with no plans sells at its edition's price, and market prices answer as on mmp 1.70.10"
+        },
+        {
+          "kind": "new",
+          "text": "Agents can manage markets and load each market's prices over the API and MCP, as on mmp 1.70.8"
+        },
+        {
+          "kind": "new",
+          "text": "A bookable session is sold in each market at its own plan prices, and a product can be hidden in a market"
+        },
+        {
+          "kind": "new",
+          "text": "Mmp 1.70.6 and 1.70.7 in the admin: an assistant sees the API's errors, dry runs check the key and the handle and show before and after, and Markets' currency fixes"
+        },
+        {
+          "kind": "new",
+          "text": "A site's own page words are edited in Content → Pages, and agents can read and change every page"
+        },
+        {
+          "kind": "fix",
+          "text": "No MongoDB index is another's twin or prefix, so an mmp database gains nothing redundant"
+        },
+        {
+          "kind": "fix",
+          "text": "A MongoDB site's build reads its downloaded plugins and records the build"
+        },
+        {
+          "kind": "fix",
+          "text": "The absence matrix fails a hung step in 20 minutes, and unit runs share one in-memory MongoDB"
+        },
+        {
+          "kind": "fix",
+          "text": "MongoDB opens MMP_ADMIN_DB before MONGODB_DB, and never writes into a CRM's database"
+        },
+        {
+          "kind": "fix",
+          "text": "An index that conflicts is tried again after the backfills, so an mmp database's first boot logs nothing"
+        },
+        {
+          "kind": "new",
+          "text": "Pg-to-mongo moves a site's Postgres into MongoDB, with a dry run, a guard, resume and verify"
+        },
+        {
+          "kind": "fix",
+          "text": "What's live shows on a MongoDB site too"
+        },
+        {
+          "kind": "new",
+          "text": "Deleting a revoked key works on MongoDB too"
+        },
+        {
+          "kind": "fix",
+          "text": "Moving a booking over its own old time checks the other bookings on MongoDB too"
+        },
+        {
+          "kind": "fix",
+          "text": "The Plugins page shows the owner's switches on MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "Core's own tables get their MongoDB indexes, under mmp's names"
+        },
+        {
+          "kind": "new",
+          "text": "The signing key, opt-outs, admin preferences and Bachs's fee bearer on MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "Uploaded images, the analytics beacon and Resend's reports on MongoDB as well"
+        },
+        {
+          "kind": "fix",
+          "text": "A booking's refundable order on MongoDB gives its id as text, as Postgres does"
+        },
+        {
+          "kind": "new",
+          "text": "The delivery log's Resend and the developer tools switch on MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "The submissions export runs on MongoDB, read in batches"
+        },
+        {
+          "kind": "new",
+          "text": "What switching a feature off affects reads MongoDB too"
+        },
+        {
+          "kind": "new",
+          "text": "Get plugin and Remove store installs on MongoDB as well"
+        },
+        {
+          "kind": "new",
+          "text": "Local currency joins Markets on MongoDB too, and Markets runs on MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "Submissions are stored, listed and deleted on MongoDB as well"
+        },
+        {
+          "kind": "new",
+          "text": "Core's booking reads and writes run on MongoDB as well"
+        },
+        {
+          "kind": "new",
+          "text": "A booking's reschedule, cancel and refund, and the Bookings list, on MongoDB too"
+        },
+        {
+          "kind": "new",
+          "text": "Reviews, Promo codes, Bookings, Automations and Conversions say they run on Neon, Postgres and MongoDB"
+        },
+        {
+          "kind": "fix",
+          "text": "Mongo reads never migrate, and Mongo indexes keep their default names"
+        },
+        {
+          "kind": "new",
+          "text": "Nine plugins that read and write MongoDB take a minor version for admin 1.60.0"
+        },
+        {
+          "kind": "new",
+          "text": "Automations' engine, builder, seeding, tracking and results read and write MongoDB too"
+        },
+        {
+          "kind": "new",
+          "text": "Reviews, Promo codes, Bookings, Newsletter, Markets, Shipping, Forms, Conversions and Automations' order page read and write MongoDB too"
+        },
+        {
+          "kind": "new",
+          "text": "Imported pages, Membership, Paid access and Blog say they run on Neon, Postgres and MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "Posts can be kept on a MongoDB site"
+        },
+        {
+          "kind": "new",
+          "text": "Grants, access codes and receipt links work on a MongoDB site"
+        },
+        {
+          "kind": "new",
+          "text": "Membership runs on a site whose data is in MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "Imported pages run on a site whose data is in MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "Core's reads and writes on Store's tables run on MongoDB as well"
+        },
+        {
+          "kind": "new",
+          "text": "What each automation sent and earned, on MongoDB as on Postgres"
+        },
+        {
+          "kind": "new",
+          "text": "Home's visits, the dashboard's breakdowns, Live View and the Orders list on MongoDB"
+        },
+        {
+          "kind": "faster",
+          "text": "MongoDB indexes for the checkout sweep and each order's refunds, follow-ups and downloads"
+        },
+        {
+          "kind": "new",
+          "text": "An order's page, the checkout sweep, Store's automation triggers, upsell sales and the thank-you links read and write MongoDB too"
+        },
+        {
+          "kind": "new",
+          "text": "A plugin's one-time data step gets the site's database, SQL or MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "Store 1.5.0 runs on Neon, Postgres and MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "Abandoned checkouts, the reminder's checks, customers' spend and Store's indexes on MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "On MongoDB the first boot gives every feature its first state, from what the site uses"
+        },
+        {
+          "kind": "new",
+          "text": "Home's visits, Analytics' breakdowns, Live View and the Orders list read MongoDB too, and answer as on Postgres"
+        },
+        {
+          "kind": "new",
+          "text": "Outgoing webhooks on MongoDB, queued and claimed on the database's clock"
+        },
+        {
+          "kind": "new",
+          "text": "A plugin's data and its detectors name rows with a Where, so counting, export, delete and first states run on MongoDB too"
+        },
+        {
+          "kind": "new",
+          "text": "Product files in the database on MongoDB, a piece stored and then counted"
+        },
+        {
+          "kind": "new",
+          "text": "Analytics, Explore and Store's sales reports answer the same on MongoDB as on Postgres"
+        },
+        {
+          "kind": "new",
+          "text": "API keys and their audit log on MongoDB, a roll in one transaction"
+        },
+        {
+          "kind": "new",
+          "text": "Idempotency-Key on MongoDB, claimed on the database's clock, kept by a TTL index"
+        },
+        {
+          "kind": "new",
+          "text": "Store's orders API, customers, refunds, order actions, fulfilment and exports run on MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "Store's checkout, downloads and Home cards run on MongoDB as well"
+        },
+        {
+          "kind": "new",
+          "text": "Job leases on MongoDB, timed by the database's own clock"
+        },
+        {
+          "kind": "new",
+          "text": "Settings, secrets and the plugins rows on MongoDB, and a read there never migrates"
+        },
+        {
+          "kind": "new",
+          "text": "Storefront 1.1.0 and Meta catalog feed 1.1.0 say they run on Neon, Postgres and MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "AnalyticsEventDoc, an analytics event as a MongoDB document with every column"
+        },
+        {
+          "kind": "new",
+          "text": "Payments says it runs on Neon, Postgres and MongoDB"
+        },
+        {
+          "kind": "new",
+          "text": "Payments runs on MongoDB as well (payments 1.2.0)"
+        },
+        {
+          "kind": "new",
+          "text": "A plugin says which databases it runs on, and a site never gets one that doesn't run on its own"
+        },
+        {
+          "kind": "new",
+          "text": "MongoDB's indexes and backfills run under a lease, one instance at a time"
+        },
+        {
+          "kind": "new",
+          "text": "Copying a site's Postgres data into MongoDB, in the shape the Mongo branches read"
+        },
+        {
+          "kind": "fix",
+          "text": "A Mongo read marks the page dynamic the way a no-store fetch does, and tests never reach a real Mongo"
+        },
+        {
+          "kind": "new",
+          "text": "A Mongo read makes the page dynamic, and Mongo's one-off changes are backfills in _migrations"
+        },
+        {
+          "kind": "new",
+          "text": "Exact money and one filter shape on both backends, collations, and Mongo for unit tests"
+        },
+        {
+          "kind": "new",
+          "text": "The admin's data on Neon, any Postgres or MongoDB, chosen by the site's environment"
+        }
+      ]
+    },
     {
       "version": "1.59.1",
       "date": "2026-11-14",

@@ -1,5 +1,5 @@
 {
-  "generatedFor": "1.59.1",
+  "generatedFor": "1.60.0",
   "plugins": [
     {
       "id": "automations",
@@ -15,8 +15,13 @@
       ],
       "group": "Marketing",
       "icon": "bolt",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-14",
+          "notes": "Reads and writes MongoDB as well as Postgres, so it needs admin 1.60.0 or later; on Postgres nothing changes."
+        },
         {
           "version": "1.2.0",
           "date": "2026-11-13",
@@ -49,8 +54,13 @@
       ],
       "group": "Website",
       "icon": "blog",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-14",
+          "notes": "Posts can be kept in MongoDB as well as Postgres, whichever your site's database is. Needs admin 1.60.0 or later."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-12",
@@ -73,8 +83,13 @@
       ],
       "group": "Sales",
       "icon": "bookings",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-14",
+          "notes": "Reads and writes MongoDB as well as Postgres, so it needs admin 1.60.0 or later; on Postgres nothing changes. AI agents can read and change a session's booking rules (get_booking_config, update_booking_config)."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -136,8 +151,13 @@
       ],
       "group": "Website",
       "icon": "cookie",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "changes": [
+        {
+          "version": "1.1.1",
+          "date": "2026-11-15",
+          "notes": "Decides whether a site already uses cookie consent the same way on Postgres and MongoDB. Needs admin 1.60.0 or later."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -169,8 +189,13 @@
       ],
       "group": "Customers",
       "icon": "form",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-14",
+          "notes": "Reads and writes MongoDB as well as Postgres, so it needs admin 1.60.0 or later; on Postgres nothing changes."
+        },
         {
           "version": "1.2.0",
           "date": "2026-11-13",
@@ -202,8 +227,13 @@
       ],
       "group": "Website",
       "icon": "pages",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-14",
+          "notes": "Imported pages also run on a site whose data is in MongoDB, with admin 1.60.0 or later; on Neon and Postgres nothing changes."
+        },
         {
           "version": "1.2.0",
           "date": "2026-11-13",
@@ -241,8 +271,13 @@
       ],
       "group": "Sales",
       "icon": "markets",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "changes": [
+        {
+          "version": "1.4.0",
+          "date": "2026-11-14",
+          "notes": "Reads and writes MongoDB as well as Postgres, so it needs admin 1.60.0 or later; on Postgres nothing changes. A bookable session can be priced per plan in each market and is sold there at that price, and a product can be hidden in a market, including where your own prices apply (Nigeria): there it is left off every list, its page is not found and checkout refuses it. A site's own pages can show each market its own words (Content → Pages, and get_page/update_page with market). A product with no price in a market is shown and sold there converted (rounded up to the next 10) or in naira, never refused; it can have its own words and pictures there; and the header picker offers Nigeria."
+        },
         {
           "version": "1.3.0",
           "date": "2026-11-13",
@@ -280,8 +315,13 @@
       ],
       "group": "Customers",
       "icon": "customers",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-14",
+          "notes": "Membership also runs on a site whose data is in MongoDB, with admin 1.60.0 or later; on Neon and Postgres nothing changes."
+        },
         {
           "version": "1.2.0",
           "date": "2026-11-13",
@@ -319,8 +359,13 @@
       ],
       "group": "Marketing",
       "icon": "products",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-14",
+          "notes": "Runs on MongoDB as well as Postgres: nothing in it reads the database. No other change."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-13",
@@ -343,8 +388,13 @@
       ],
       "group": "Marketing",
       "icon": "newsletter",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-14",
+          "notes": "Reads and writes MongoDB as well as Postgres, so it needs admin 1.60.0 or later; on Postgres nothing changes."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -377,8 +427,13 @@
       ],
       "group": "Sales",
       "icon": "connection",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-14",
+          "notes": "Grants, access codes and receipt links work on MongoDB as well as Postgres, whichever your site's database is, and earlier orders are brought in the same way. Needs admin 1.60.0 or later."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -411,8 +466,13 @@
       ],
       "group": "Payments",
       "icon": "payments",
-      "version": "1.1.1",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-14",
+          "notes": "Runs on MongoDB as well as Postgres; needs admin 1.60.0 or later."
+        },
         {
           "version": "1.1.1",
           "date": "2026-11-14",
@@ -445,8 +505,13 @@
       ],
       "group": "Sales",
       "icon": "promos",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-14",
+          "notes": "Reads and writes MongoDB as well as Postgres, so it needs admin 1.60.0 or later; on Postgres nothing changes."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -479,8 +544,13 @@
       ],
       "group": "Marketing",
       "icon": "testimonials",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-14",
+          "notes": "Reads and writes MongoDB as well as Postgres, so it needs admin 1.60.0 or later; on Postgres nothing changes."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -513,8 +583,13 @@
       ],
       "group": "Marketing",
       "icon": "tracking",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-14",
+          "notes": "Reads and writes MongoDB as well as Postgres, so it needs admin 1.60.0 or later; on Postgres nothing changes."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -546,8 +621,13 @@
       ],
       "group": "Sales",
       "icon": "truck",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-14",
+          "notes": "Reads and writes MongoDB as well as Postgres, so it needs admin 1.60.0 or later; on Postgres nothing changes."
+        },
         {
           "version": "1.2.0",
           "date": "2026-11-13",
@@ -585,8 +665,13 @@
       ],
       "group": "Sales",
       "icon": "orders",
-      "version": "1.4.1",
+      "version": "1.5.0",
       "changes": [
+        {
+          "version": "1.5.0",
+          "date": "2026-11-14",
+          "notes": "Runs on MongoDB as well as Postgres; needs admin 1.60.0 or later. get_product and update_product take a market, for that market's own words and pictures; a product's picture and gallery are always the site's own: a link is copied onto the site (image_url, or an https url), or an image is sent as base64 (image_base64 with filename, at most 2 MB), kept as WebP. An item shown in naira inside a market priced in another currency keeps ₦ everywhere, and a cart holding both names them. AI agents can note an order, mark it fulfilled, record an offline payment, put products in collections or take them out, and set a product's position, badges, related products and a bundle's contents."
+        },
         {
           "version": "1.4.1",
           "date": "2026-11-14",
@@ -633,8 +718,13 @@
       ],
       "group": "Website",
       "icon": "storefront",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-14",
+          "notes": "Runs on MongoDB as well as Postgres: nothing in it reads the database. The contact page and the contact details policy page show the contact email (Content → Contact) as a link; needs admin 1.60.0 or later."
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-04",
@@ -657,8 +747,13 @@
       ],
       "group": "Sales",
       "icon": "gift",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-15",
+          "notes": "In a market priced in its own currency, an offer for a product still in naira shows ₦, not the market's currency, so it needs admin 1.60.0 or later."
+        },
         {
           "version": "1.2.0",
           "date": "2026-11-13",
