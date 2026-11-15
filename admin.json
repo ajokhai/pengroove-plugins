@@ -1,6 +1,52 @@
 {
-  "latest": "1.60.1",
+  "latest": "1.60.2",
   "releases": [
+    {
+      "version": "1.60.2",
+      "date": "2026-11-15",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "Chat answers better: it reads misspellings, follows a conversation, compares products, offers \"Did you mean\" and recommends products, with its own words and prices in each market"
+        },
+        {
+          "kind": "new",
+          "text": "Chat handles basic support: order status and booking details by email, complaints with a ticket number, and a hand-over to a person"
+        },
+        {
+          "kind": "new",
+          "text": "Complaints show in Form submissions with a status: new, replied or resolved"
+        },
+        {
+          "kind": "new",
+          "text": "Visitors outside your markets can see a market’s prices in their own currency where your payment connection can charge it, else in US dollars"
+        },
+        {
+          "kind": "fix",
+          "text": "A market charged in US dollars uses a real exchange rate, never one for one"
+        },
+        {
+          "kind": "new",
+          "text": "Checkout lets buyers change quantities and remove lines"
+        },
+        {
+          "kind": "new",
+          "text": "A bookable session shows times in the visitor’s market’s time zone, with a booking note per market"
+        },
+        {
+          "kind": "new",
+          "text": "Email settings set up in four steps, and a plugin’s page reads in plain words and warns before switching off"
+        },
+        {
+          "kind": "new",
+          "text": "Pages can carry a short video over the API"
+        },
+        {
+          "kind": "fix",
+          "text": "Pages built ahead of time use your own settings, and an agent’s sign-in link opens on your site’s own address"
+        }
+      ]
+    },
     {
       "version": "1.60.1",
       "date": "2026-11-15",

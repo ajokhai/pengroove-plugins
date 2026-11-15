@@ -1,5 +1,5 @@
 {
-  "generatedFor": "1.60.0",
+  "generatedFor": "1.60.2",
   "plugins": [
     {
       "id": "automations",
@@ -117,8 +117,43 @@
       ],
       "group": "Customers",
       "icon": "chat",
-      "version": "1.1.0",
+      "version": "1.7.0",
       "changes": [
+        {
+          "version": "1.7.0",
+          "date": "2026-11-15",
+          "notes": "\"Resend my booking details\" or \"call link\" in the chat: the bot asks for the email they booked with and sends that booking's details again, to the email on the booking. It says the same line whether there's a booking or not, so nothing is given away (needs Bookings, and the resend switch on; its words are your own per market: support_words resend_booking and resend_booking_sent). A recommended product with nothing to pick has \"Add to cart\" on its card, at the price its market pays, beside \"View\". The Chat screen now has recommendations, \"Book a call\", the support switches and words and the order status email, and WhatsApp and a number to text on each market's tab. \"Test a question\" answers support requests and shows recommendations as visitors see them. Needs admin 1.60.2 or later."
+        },
+        {
+          "version": "1.6.0",
+          "date": "2026-11-15",
+          "notes": "The message and complaint forms take a phone number, an email, or both, with the phone example in the visitor's own country's format (and \"we'll text you\" in the US and Canada), not a WhatsApp number everywhere. \"Text us\": a market can have a number to text (text_number), shown first there, and its own WhatsApp switch. Typing while a form is open closes it and is answered. The forms' hidden bot trap has no label to read. Needs admin 1.60.2 or later."
+        },
+        {
+          "version": "1.5.1",
+          "date": "2026-11-15",
+          "notes": "A complaint's status (new, replied, resolved) can be changed in Form submissions, which also filters by it and shows the reference the visitor was given. Needs admin 1.60.2 or later."
+        },
+        {
+          "version": "1.5.0",
+          "date": "2026-11-15",
+          "notes": "Customer support, on to start with. \"Where's my order?\": the bot asks for the email the buyer ordered with and emails their latest order's status to the address on that order; the chat says the same line whether there is one or not, and never shows anything about an order. A complaint opens a short form, kept in Form submissions as a Complaint with a reference the visitor is given (needs Forms). \"Resend my receipt\" and \"move my booking\" go to a person with a line that says so. Each can be switched off, and every line, each status's name and the status email can be your own, per market (update_chat_settings: support, support_words). Needs admin 1.60.2 or later."
+        },
+        {
+          "version": "1.4.0",
+          "date": "2026-11-15",
+          "notes": "Recommendations: a visitor who says what they do or need (\"I run a salon\", \"I want to sell online\") is shown one or two products as cards, with the price their market is charged. You choose which with rules (words → products), per market, through update_chat_settings: recommendations, recommend_message, and consultation_product for a \"Not sure? Book a call\" link. With no rule that fits, the bot recommends what its search finds by name."
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-11-15",
+          "notes": "Smarter answers, still with no AI. The bot follows the conversation (\"how much is it?\" is about the product just talked about), reads misspellings, answers \"hi\", \"thanks\" and \"can I speak to someone?\" properly, shows two products side by side when both are named, knows the cheapest and the most expensive, answers two questions in one message, and offers \"Did you mean\" buttons when nothing fits. With Markets, each market has its own index: the site's pages are read as that market's visitors see them, with its products and prices, and the store's own is read with no market picked, not as wherever the server is. Needs admin 1.60.2 or later."
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-11-15",
+          "notes": "Words per market: each market (Markets) can have its own greeting, quick replies, Knowledge base, fallback, office hours and time zone, and WhatsApp number, falling back to the default's. {price:handle} in any of the chat's words shows that product's price in the visitor's market. get_chat_settings and update_chat_settings on the API and MCP, with an optional market. Needs admin 1.60.2 or later."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-13",
@@ -271,8 +306,28 @@
       ],
       "group": "Sales",
       "icon": "markets",
-      "version": "1.4.0",
+      "version": "1.6.0",
       "changes": [
+        {
+          "version": "1.6.0",
+          "date": "2026-11-15",
+          "notes": "The rest of the world can see a market's prices in their own currency: Markets → Everyone else → \"Show prices from\" a market, with \"In the visitor's currency when your payment connection can charge it, else US dollars\" on (or update_market <market> rest_of_world \"local\"). Converted at the payment connection's own rate, else today's, rounded up to the next 10, and charged in that currency, so what's shown is what's charged. The page lists the currencies your connection charges in and each rate's source, and each market charged in US dollars shows the rate checkout uses now. New markets in a currency the connection charges in (the cedi, the shilling, the CFA francs…) charge in it rather than in US dollars. Needs admin 1.60.2 or later, as 1.5.0 to 1.5.2 do."
+        },
+        {
+          "version": "1.5.2",
+          "date": "2026-11-15",
+          "notes": "Chat can read your site once for each market, as that market's visitors see it."
+        },
+        {
+          "version": "1.5.1",
+          "date": "2026-11-15",
+          "notes": "On a market's tab in Chat, product prices show as that market's visitors see them."
+        },
+        {
+          "version": "1.5.0",
+          "date": "2026-11-15",
+          "notes": "The header's country picker shows only when Markets → \"Show the country picker in the menu\" is on, which it isn't until you turn it on: visitors get the market for where they are. Your preview bar keeps its own picker either way. A market can cover regions (continents, the EU, the Middle East) as well as countries: a listed country wins, then the narrower region, and Nigeria is never matched by a region. And you choose what visitors outside Nigeria that no market or region is for see: your own prices in naira, in one currency of your choice (converted and rounded up to the next 10), in each visitor's own currency, or a market's prices (Markets page, or update_market PRIMARY / a market with rest_of_world). A market charged in US dollars is charged at the payment connection's own rate, else today's, else its own rate, never one for one: with none, checkout refuses the order. The checkout's US dollar line shows the same amount, and the Markets page and update_market warn when the rate is still 1."
+        },
         {
           "version": "1.4.0",
           "date": "2026-11-14",
@@ -466,8 +521,13 @@
       ],
       "group": "Payments",
       "icon": "payments",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-15",
+          "notes": "A market charged in US dollars is charged at Bachs's own rate between US dollars and naira; other currencies use the day's rate. Markets also knows which currencies Bachs can charge in: US dollars, naira, the cedi, the Kenyan, Tanzanian and Ugandan shillings, the Malawian and Zambian kwacha, the Rwandan franc and the CFA francs. Needs admin 1.60.2 or later."
+        },
         {
           "version": "1.2.0",
           "date": "2026-11-14",
@@ -665,8 +725,13 @@
       ],
       "group": "Sales",
       "icon": "orders",
-      "version": "1.5.0",
+      "version": "1.6.0",
       "changes": [
+        {
+          "version": "1.6.0",
+          "date": "2026-11-15",
+          "notes": "A product's badges can differ per market (\"Save $40\" in the US, \"Save ₦15k\" at home): update_product with market sets them, get_product shows them, and that market's visitors see them; the product's own show wherever a market has none. A bookable session's times start in the visitor's market's time zone (New York for the US market) until the browser shows their own, and a session with no payment plans can be booked at its own price for the visitor's market. At checkout, buyers can change quantities and remove lines; each line has a short line about the product and a session its booked time; the phone number starts on the visitor's market's country; the email note mentions a download link only when the order has a file; and an order charged in US dollars says so in one line under the total (\"≈ US$13.32, charged in US dollars at today's rate\"). Needs admin 1.60.2 or later."
+        },
         {
           "version": "1.5.0",
           "date": "2026-11-14",
@@ -718,8 +783,18 @@
       ],
       "group": "Website",
       "icon": "storefront",
-      "version": "1.1.0",
+      "version": "1.2.1",
       "changes": [
+        {
+          "version": "1.2.1",
+          "date": "2026-11-15",
+          "notes": "What's new reads in plain words."
+        },
+        {
+          "version": "1.2.0",
+          "date": "2026-11-15",
+          "notes": "Your site can show a highlighted strip at the top of the products page. Needs admin 1.60.2 or later."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-14",
@@ -747,8 +822,13 @@
       ],
       "group": "Sales",
       "icon": "gift",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "changes": [
+        {
+          "version": "1.4.0",
+          "date": "2026-11-15",
+          "notes": "At checkout, each \"Add to your order\" offer has a line about the product under its name, in the words of the visitor's market. Needs admin 1.60.2 or later."
+        },
         {
           "version": "1.3.0",
           "date": "2026-11-15",
