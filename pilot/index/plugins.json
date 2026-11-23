@@ -1,7 +1,7 @@
 {
   "format": 1,
-  "serial": 10,
-  "issued": "2026-11-15T23:35:42.019Z",
+  "serial": 11,
+  "issued": "2026-11-23T15:26:50.756Z",
   "keyId": "josh-2026-11",
   "plugins": {
     "automations": {
@@ -159,6 +159,21 @@
       "yanked": false,
       "versions": [
         {
+          "version": "1.8.2",
+          "file": "chat-1.8.2.pgz",
+          "sha256": "0d74d8e504a7bd3cd3a35589bb89ad5c42f7afb0b95f3dba6dfa760412f63a0e",
+          "size": 110560,
+          "adminRange": ">=1.60.3 <2.0.0",
+          "api": 1,
+          "requires": [],
+          "enhances": [
+            "forms",
+            "conversions"
+          ],
+          "minimum": "0.0.0",
+          "yanked": false
+        },
+        {
           "version": "1.7.0",
           "file": "chat-1.7.0.pgz",
           "sha256": "575c70d9cf6d015c2c536b4c782e61e5654ca2e793e1342468ac7c6a616f0663",
@@ -283,6 +298,21 @@
         }
       ]
     },
+    "explee": {
+      "id": "explee",
+      "name": "Explee",
+      "description": "See and steer your Explee outreach campaigns from the admin, the API and MCP, within a monthly spend cap you set.",
+      "version": "1.1.0",
+      "file": "explee-1.1.0.pgz",
+      "sha256": "c72d4d8215f260bdababf9fb53087c0180a11785f8ad4321eadd868d32bf0d91",
+      "size": 28900,
+      "adminRange": ">=1.60.3 <2.0.0",
+      "api": 1,
+      "requires": [],
+      "enhances": [],
+      "minimum": "0.0.0",
+      "yanked": false
+    },
     "forms": {
       "id": "forms",
       "name": "Forms",
@@ -400,6 +430,25 @@
       "yanked": false,
       "versions": [
         {
+          "version": "1.7.0",
+          "file": "markets-1.7.0.pgz",
+          "sha256": "ea7fc2bac03cbcbb5c6d3ab2515366d2134541d74799501d6f3a1eefac609386",
+          "size": 68737,
+          "adminRange": ">=1.60.3 <2.0.0",
+          "api": 1,
+          "requires": [],
+          "enhances": [
+            "store"
+          ],
+          "backends": [
+            "neon",
+            "pg",
+            "mongo"
+          ],
+          "minimum": "0.0.0",
+          "yanked": false
+        },
+        {
           "version": "1.6.0",
           "file": "markets-1.6.0.pgz",
           "sha256": "da9f48cdeb0b6597bec9e8eefb7443cf4f25bdf27c722126c59d422810242dff",
@@ -471,6 +520,26 @@
       "minimum": "0.0.0",
       "yanked": false,
       "versions": [
+        {
+          "version": "1.3.1",
+          "file": "membership-1.3.1.pgz",
+          "sha256": "86dff74004b00e06d710d8c93155daac80ecbee92e483348660bbf50ac0396db",
+          "size": 67601,
+          "adminRange": ">=1.60.3 <2.0.0",
+          "api": 1,
+          "requires": [],
+          "enhances": [
+            "forms",
+            "automations"
+          ],
+          "backends": [
+            "neon",
+            "pg",
+            "mongo"
+          ],
+          "minimum": "0.0.0",
+          "yanked": false
+        },
         {
           "version": "1.3.0",
           "file": "membership-1.3.0.pgz",
@@ -907,6 +976,25 @@
       "yanked": false,
       "versions": [
         {
+          "version": "1.6.1",
+          "file": "store-1.6.1.pgz",
+          "sha256": "1772914fa00f1669f426e03d14c04e7af58b1c71482db4546c5501311cc7cacd",
+          "size": 152220,
+          "adminRange": ">=1.60.3 <2.0.0",
+          "api": 1,
+          "requires": [
+            "payments"
+          ],
+          "enhances": [],
+          "backends": [
+            "neon",
+            "pg",
+            "mongo"
+          ],
+          "minimum": "0.0.0",
+          "yanked": false
+        },
+        {
           "version": "1.6.0",
           "file": "store-1.6.0.pgz",
           "sha256": "4e9f373d4c7730b1b953e9c6a9fb8db5dbd54a59a5a33ea39475f54f771c1ec4",
@@ -1005,6 +1093,25 @@
       "minimum": "0.0.0",
       "yanked": false,
       "versions": [
+        {
+          "version": "1.3.0",
+          "file": "storefront-1.3.0.pgz",
+          "sha256": "c14d5331b60ea294194ec8916c2647af05728c02d058a5518e514cc576f8a98c",
+          "size": 14325,
+          "adminRange": ">=1.60.3 <2.0.0",
+          "api": 1,
+          "requires": [],
+          "enhances": [
+            "store"
+          ],
+          "backends": [
+            "neon",
+            "pg",
+            "mongo"
+          ],
+          "minimum": "0.0.0",
+          "yanked": false
+        },
         {
           "version": "1.2.1",
           "file": "storefront-1.2.1.pgz",

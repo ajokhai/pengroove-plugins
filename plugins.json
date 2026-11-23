@@ -1,5 +1,5 @@
 {
-  "generatedFor": "1.60.2",
+  "generatedFor": "1.60.3",
   "plugins": [
     {
       "id": "automations",
@@ -117,8 +117,23 @@
       ],
       "group": "Customers",
       "icon": "chat",
-      "version": "1.7.0",
+      "version": "1.8.2",
       "changes": [
+        {
+          "version": "1.8.2",
+          "date": "2026-11-16",
+          "notes": "A customer's reply to its emails goes to the store's \"Replies go to\" address (Settings → Email), else the notify address, not to the sender. Needs admin 1.60.3 or later."
+        },
+        {
+          "version": "1.8.1",
+          "date": "2026-11-16",
+          "notes": "The chat's answers and prices come only from the visitor's own market, never another country's, whatever the page asks for. Needs admin 1.60.3 or later."
+        },
+        {
+          "version": "1.8.0",
+          "date": "2026-11-16",
+          "notes": "The chat answers from the policy text of the visitor's own market where it has one (a refund policy of its own, say), and the default's elsewhere. Needs admin 1.60.3 or later."
+        },
         {
           "version": "1.7.0",
           "date": "2026-11-15",
@@ -212,6 +227,35 @@
       "since": "1.51.0"
     },
     {
+      "id": "explee",
+      "name": "Explee",
+      "summary": "See and steer your Explee outreach campaigns, within a spend cap",
+      "description": "See and steer your Explee outreach campaigns from the admin, the API and MCP, within a monthly spend cap you set.",
+      "features": [
+        "Projects, campaigns, replies, hot leads and spend from your Explee account",
+        "A monthly spend cap: a budget that could go over it is refused",
+        "Daily budgets, stopping a campaign and Auto-manage, as dry runs first",
+        "A log of every call made to Explee",
+        "Your Explee key is kept with your other connected services and never shown"
+      ],
+      "group": "Sales",
+      "icon": "analytics",
+      "version": "1.1.0",
+      "changes": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-16",
+          "notes": "Campaigns can be made and changed, started and approved; a list of your own leads can be imported as a campaign; the inbox, conversations and hot leads can be read and a lead answered; and people or companies can be added to Explee's suppress lists. Starting, approving and importing are refused unless the budgets set fit your monthly spend cap. Nobody who has unsubscribed from your store's own email is imported or replied to, and the store's unsubscribes can be passed on to Explee in one call. Needs admin 1.60.3 or later."
+        },
+        {
+          "version": "1.0.0",
+          "date": "2026-11-16",
+          "notes": "First release. Connect an Explee account (explee.com: outreach that finds leads and emails them) and see its projects, campaigns, results and spend here, over the API and MCP. Set daily budgets, stop a campaign and switch Explee's Auto-manage, each checked against a monthly spend cap you set; with no cap, nothing that spends can be changed. Every call to Explee is logged. Off until you switch it on and add a key. Needs admin 1.60.3 or later."
+        }
+      ],
+      "since": "1.60.3"
+    },
+    {
       "id": "forms",
       "name": "Forms",
       "summary": "An inquiry form with your own questions and file uploads",
@@ -301,13 +345,18 @@
         "Buyers abroad see and pay in their own currency, converted at the day's rate and rounded up",
         "Works from the start: new stores begin with an Everyone else market",
         "Or give a market its own prices, and each product its own name, words and file there",
-        "Add a market for a country or a region such as the EU; visitors can switch in the header",
+        "Add a market for a country or a region such as the EU; visitors get the one for where they are",
         "Charge a market in US dollars if you like; you're still paid in naira or dollars"
       ],
       "group": "Sales",
       "icon": "markets",
-      "version": "1.6.0",
+      "version": "1.7.0",
       "changes": [
+        {
+          "version": "1.7.0",
+          "date": "2026-11-16",
+          "notes": "Visitors get the market for where they are, and see and pay only its prices. Picking another country no longer changes their prices unless you switch on \"Let visitors pick their country in the menu\" (Markets page, off by default), and the Markets page warns that with it on, visitors can see and pay another country's prices. A site with its own country picker needs that switched on for the picker to keep working; with it off, each visitor sees their own market. Visitors never see your other markets or how a market is priced (its rate or rounding), and Chat answers only from the visitor's own market. Needs admin 1.60.3 or later."
+        },
         {
           "version": "1.6.0",
           "date": "2026-11-15",
@@ -370,8 +419,13 @@
       ],
       "group": "Customers",
       "icon": "customers",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "changes": [
+        {
+          "version": "1.3.1",
+          "date": "2026-11-16",
+          "notes": "A customer's reply to its emails goes to the store's \"Replies go to\" address (Settings → Email), else the notify address, not to the sender. Needs admin 1.60.3 or later."
+        },
         {
           "version": "1.3.0",
           "date": "2026-11-14",
@@ -725,8 +779,13 @@
       ],
       "group": "Sales",
       "icon": "orders",
-      "version": "1.6.0",
+      "version": "1.6.1",
       "changes": [
+        {
+          "version": "1.6.1",
+          "date": "2026-11-16",
+          "notes": "A customer's reply to its emails goes to the store's \"Replies go to\" address (Settings → Email), else the notify address, not to the sender. Needs admin 1.60.3 or later."
+        },
         {
           "version": "1.6.0",
           "date": "2026-11-15",
@@ -783,8 +842,13 @@
       ],
       "group": "Website",
       "icon": "storefront",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-16",
+          "notes": "With Markets, each policy (privacy, refund, contact information, terms, cookies) can have its own text for each market, set on the policy's own market tab in Content → Pages or with update_page and a market. Visitors see their own market's text at the same address, or the default where their market has none, and the footer links a policy only when it has text for them. The sitemap lists a policy only once its default text has words, so an empty one is no longer listed. Needs admin 1.60.3 or later."
+        },
         {
           "version": "1.2.1",
           "date": "2026-11-15",

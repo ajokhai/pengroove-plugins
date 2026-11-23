@@ -1,6 +1,54 @@
 {
-  "latest": "1.60.2",
+  "latest": "1.60.3",
   "releases": [
+    {
+      "version": "1.60.3",
+      "date": "2026-11-23",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "Each policy, such as refunds, can have its own wording for each country you sell in"
+        },
+        {
+          "kind": "fix",
+          "text": "Visitors always see the prices for where they are. A country picker in the menu only works if you switch it on in Markets"
+        },
+        {
+          "kind": "new",
+          "text": "Customers' replies to your store's emails go to the address in Settings → Email → \"Replies go to\", or your notification address"
+        },
+        {
+          "kind": "new",
+          "text": "People who unsubscribed no longer get marketing or automated emails from you; receipts and order updates still reach them"
+        },
+        {
+          "kind": "new",
+          "text": "A sign-up form with a consent tick box, and leads your AI agent can list and update"
+        },
+        {
+          "kind": "new",
+          "text": "Your AI agent can read visits, orders and revenue by source, campaign or page, and manage your email settings"
+        },
+        {
+          "kind": "new",
+          "text": "New Explee plugin, off until you switch it on, to watch and steer outreach campaigns within a monthly spend limit"
+        },
+        {
+          "kind": "fix",
+          "text": "Policies with no text are no longer linked in the shop or checkout footer"
+        },
+        {
+          "kind": "fix",
+          "text": "Policy pages are easier to read, with more space between sections and paragraphs"
+        }
+      ],
+      "plugins": [
+        {
+          "name": "Explee",
+          "description": "See and steer your Explee outreach campaigns, within a spend cap"
+        }
+      ]
+    },
     {
       "version": "1.60.2",
       "date": "2026-11-15",
