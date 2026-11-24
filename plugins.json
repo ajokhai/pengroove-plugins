@@ -1,5 +1,5 @@
 {
-  "generatedFor": "1.60.3",
+  "generatedFor": "1.60.4",
   "plugins": [
     {
       "id": "automations",
@@ -54,8 +54,13 @@
       ],
       "group": "Website",
       "icon": "blog",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "changes": [
+        {
+          "version": "1.2.0",
+          "date": "2026-11-23",
+          "notes": "Importing a site's old posts keeps each cover from another site (an Unsplash photo) as the site's own image instead of linking to it; one that can't be fetched keeps its link and is reported. A site moving its own posts across can run the import itself, with a dry run first. Needs admin 1.60.4 or later."
+        },
         {
           "version": "1.1.0",
           "date": "2026-11-14",
@@ -117,8 +122,13 @@
       ],
       "group": "Customers",
       "icon": "chat",
-      "version": "1.8.2",
+      "version": "1.9.0",
       "changes": [
+        {
+          "version": "1.9.0",
+          "date": "2026-11-23",
+          "notes": "The chat also answers from your Terms of service and Cookie policy, each market's own text where it has one. A market still in draft has chat answers in your own ?country= preview, so you can try the chat before the market goes live; visitors never get a draft's. Needs admin 1.60.4 or later."
+        },
         {
           "version": "1.8.2",
           "date": "2026-11-16",
@@ -264,12 +274,23 @@
         "Build your own questions, from short answers to checkboxes and phone numbers",
         "Let visitors attach files, kept privately for you",
         "Send people on to another page, such as your booking page, once they're done",
-        "Every answer is saved in Form submissions and emailed to you"
+        "Every answer is saved in Form submissions and emailed to you",
+        "Run waitlists: collect email addresses for something that isn't ready yet"
       ],
       "group": "Customers",
       "icon": "form",
-      "version": "1.3.0",
+      "version": "1.5.0",
       "changes": [
+        {
+          "version": "1.5.0",
+          "date": "2026-11-23",
+          "notes": "The inquiry form page can show your site's own design around the working form, when your site's code brings its own contact page. Needs admin 1.60.4 or later."
+        },
+        {
+          "version": "1.4.0",
+          "date": "2026-11-23",
+          "notes": "Waitlists: a page can take an email address for something that isn't ready yet (POST /api/waitlist), on one waitlist or several named ones. Each address is kept once per waitlist in Form submissions, with a CSV export, and can start an automation (\"Someone joins a waitlist\"). You're emailed about a join only if you switch that on in Inquiry form. Needs admin 1.60.4 or later."
+        },
         {
           "version": "1.3.0",
           "date": "2026-11-14",
@@ -350,8 +371,23 @@
       ],
       "group": "Sales",
       "icon": "markets",
-      "version": "1.7.0",
+      "version": "1.8.1",
       "changes": [
+        {
+          "version": "1.8.1",
+          "date": "2026-11-23",
+          "notes": "Tells the Store which market your own prices are for, so the sitemap leaves out a product hidden there. Needs admin 1.60.4 or later."
+        },
+        {
+          "version": "1.8.0",
+          "date": "2026-11-23",
+          "notes": "No visitor can see or find another region's prices: the products the pages get carry only the visitor's own market's edition (none for your own prices), so no other market's price reaches a page or the browser. The Storefront API's markets endpoint gives only the market for the country asked about (or the request's), without its pricing settings or whether it's charged in US dollars. The Storefront API's pages give each policy as that market's visitors see it. A pick the site signs for itself (Chat's index) opens only the draft market it names, never drafts for the country and region fallbacks, and checkout and the Storefront API never take one, so it can't buy or list another region's prices. Needs admin 1.60.4 or later."
+        },
+        {
+          "version": "1.7.1",
+          "date": "2026-11-23",
+          "notes": "A page the site reads for itself as a market (Chat's index) can be read as a market still in draft, for the owner's preview of it. No visitor can ask for one. Needs admin 1.60.4 or later."
+        },
         {
           "version": "1.7.0",
           "date": "2026-11-16",
@@ -529,15 +565,20 @@
       "description": "Sell time-limited access to a tool or page, with access codes, extensions and expiry.",
       "features": [
         "Access lasts the number of days you set, or never ends",
-        "Buyers get a link in their receipt and thank-you page, with the date access ends",
-        "When access ends, buyers can buy again for a new period",
+        "Buyers get a link and an access code in their receipt, with the date access ends",
+        "Sell an extension for more time, or let buyers buy again when access ends",
         "A full refund ends access straight away",
         "Stop new sales while current buyers keep their access"
       ],
       "group": "Sales",
       "icon": "connection",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "changes": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-23",
+          "notes": "For a site that already sold its own tools: a digital product whose download link is a page on your site now sells timed access to that page, with an extension buyers can add, set in a new Access card on the product. Buyers can type the access code from their receipt to open what they bought, receipts show the code, and a tool says \"pending\" while a payment clears. Earlier orders keep their codes and lengths, and browsers that had access keep it. Needs admin 1.60.4 or later."
+        },
         {
           "version": "1.2.0",
           "date": "2026-11-14",
@@ -779,8 +820,23 @@
       ],
       "group": "Sales",
       "icon": "orders",
-      "version": "1.6.1",
+      "version": "1.8.0",
       "changes": [
+        {
+          "version": "1.8.0",
+          "date": "2026-11-23",
+          "notes": "Your site's own code can draw the checkout form, the bar and links around checkout, and a bookable session's time picker, in its own design; checkout still works out every price itself. Without them, the admin's own are used. Needs admin 1.60.4 or later."
+        },
+        {
+          "version": "1.7.1",
+          "date": "2026-11-23",
+          "notes": "The sitemap lists only product pages that open for a visitor: active, on sale now, and not hidden where your own prices apply (a product sold only in other markets has no page there, so it is left out). Needs admin 1.60.4 or later."
+        },
+        {
+          "version": "1.7.0",
+          "date": "2026-11-23",
+          "notes": "A receipt's download link for a product that sells access to a page opens that page for the buyer, also when the product was bought in a bundle. Checkout keeps a product at the quantity a plugin sets for it. Needs admin 1.60.4 or later."
+        },
         {
           "version": "1.6.1",
           "date": "2026-11-16",
@@ -842,8 +898,13 @@
       ],
       "group": "Website",
       "icon": "storefront",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "changes": [
+        {
+          "version": "1.4.0",
+          "date": "2026-11-23",
+          "notes": "Your site's own code can draw the products page, the contact page and the cart drawer in its own design: the products page gets what each visitor can buy, priced for their market, and the contact page the working form to place. Needs admin 1.60.4 or later."
+        },
         {
           "version": "1.3.0",
           "date": "2026-11-16",
@@ -886,8 +947,13 @@
       ],
       "group": "Sales",
       "icon": "gift",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "changes": [
+        {
+          "version": "1.5.0",
+          "date": "2026-11-23",
+          "notes": "\"Bought with\" discounts also apply when the buyer already has running access to the product they go with, and never to an access extension. Needs admin 1.60.4 or later."
+        },
         {
           "version": "1.4.0",
           "date": "2026-11-15",

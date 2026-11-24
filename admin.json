@@ -1,6 +1,52 @@
 {
-  "latest": "1.60.3",
+  "latest": "1.60.4",
   "releases": [
+    {
+      "version": "1.60.4",
+      "date": "2026-11-24",
+      "notes": [
+        {
+          "kind": "new",
+          "text": "Waitlists: visitors can join one, you can export the list, and an automation can start when someone joins"
+        },
+        {
+          "kind": "new",
+          "text": "Paid tool pages, like calculators, keep their access codes, extensions and buyers' running access, and receipt links open them"
+        },
+        {
+          "kind": "fix",
+          "text": "Visitors only ever see prices for their own country, on pages, in the browser and through the API"
+        },
+        {
+          "kind": "fix",
+          "text": "Your sitemap lists only product pages that open for visitors"
+        },
+        {
+          "kind": "fix",
+          "text": "Pages answer faster after a quiet spell, because the site keeps its database connection open longer"
+        },
+        {
+          "kind": "new",
+          "text": "The chat answers from your terms and cookie policies too, and works in your preview of a draft market"
+        },
+        {
+          "kind": "new",
+          "text": "Importing posts from an older site keeps their cover photos on your own site"
+        },
+        {
+          "kind": "new",
+          "text": "Tools for moving a site's images and files onto the site itself, each with a test run and a way to undo"
+        },
+        {
+          "kind": "new",
+          "text": "A site with its own design can now use its own checkout, product, contact and cart screens"
+        },
+        {
+          "kind": "fix",
+          "text": "Updates keep a site's own version number instead of stopping on it"
+        }
+      ]
+    },
     {
       "version": "1.60.3",
       "date": "2026-11-23",
